@@ -19,11 +19,11 @@ df = preprocess(df)
 X, y = get_features_targets(df)
 
 model = xgb.XGBClassifier(
-    n_estimators=1000,
+    objective="binary:logistic",
+    eval_metric="auc",
     max_depth=5,
-    learning_rate=0.1,
-    use_label_encoder=False,
-    eval_metric='logloss'
+    n_estimators=300,
+    learning_rate=0.05
 )
 model.fit(X, y)
 

@@ -1,5 +1,4 @@
-- Reported income alone is not a reliable indicator of low fraud risk.
-- Very high similarity between applicant name and email may indicate auto-generated or short-lived email usage.
-- Limited address history can reduce confidence in applicant stability.
-- Unusual application volume from the same ZIP code within a short time window may indicate coordinated activity.
-- High requested financial exposure combined with limited applicant maturity increases fraud risk.
+If the prev_address_months_count is higher than 6 the decision is APPROVE.
+Low prev_address_months_count, current_address_months_count and name_email_similarity leads to REJECT.
+customer_age greater than 50 usually leads to APPROVE.
+Higher intended_balcon_amount leads to APPROVE

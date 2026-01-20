@@ -1,0 +1,4 @@
+data_path: "data/baf_dataset.csv"
+model_path: "models/xgb_model.pkl"
+rag_docs_path: "rag/docs/fraud_rules.txt"
+rag_index_path: "rag/rag_index.pkl"
